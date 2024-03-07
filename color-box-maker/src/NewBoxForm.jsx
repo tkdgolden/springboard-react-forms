@@ -16,8 +16,10 @@ const NewBoxForm = ({ addBox }) => {
     
     const handleSubmit = evt => {
         evt.preventDefault();
-        addBox(fData);
-        setFormData(INITIAL_STATE);
+        if (fData.color && fData.height && fData.width) {
+            addBox(fData);
+            setFormData(INITIAL_STATE);
+        }
     }
 
     return (

@@ -17,15 +17,15 @@ const BoxList = () => {
         console.log(box.color)
     ))};
 
-    function deleteBox() {
-
+    function deleteBox(id) {
+        setBoxes(boxes => boxes.filter(box => box.id !== id));
     }
     
     return (
         <>
             <h1>Box List</h1>
             {boxes.map((box) => (
-                <Box key={box.id} color={box.color} height={box.height} width={box.width} deleteBox={deleteBox} />
+                <Box key={box.id} id={box.id} color={box.color} height={box.height} width={box.width} deleteBox={deleteBox} />
             ))}
             <NewBoxForm addBox={addBox}/>
         </>
