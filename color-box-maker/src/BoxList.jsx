@@ -9,13 +9,7 @@ const BoxList = () => {
 
     function addBox({ color, height, width }) {
         setBoxes(boxes => [...boxes, {id: uuid(), color: color, height: parseInt(height), width: parseInt(width)}]);
-        console.log(boxes.length);
     };
-
-    console.log(boxes);
-    {boxes.map((box) => (
-        console.log(box.color)
-    ))};
 
     function deleteBox(id) {
         setBoxes(boxes => boxes.filter(box => box.id !== id));
@@ -23,7 +17,7 @@ const BoxList = () => {
     
     return (
         <>
-            <h1>Box List</h1>
+            <h2>Box List</h2>
             {boxes.map((box) => (
                 <Box key={box.id} id={box.id} color={box.color} height={box.height} width={box.width} deleteBox={deleteBox} />
             ))}

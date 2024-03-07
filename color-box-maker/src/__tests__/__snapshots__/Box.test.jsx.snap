@@ -1,0 +1,77 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > renders 1`] = `
+<DocumentFragment>
+  <h1>
+    Making Boxes
+  </h1>
+  <h2>
+    Box List
+  </h2>
+  <div
+    style="background-color: red; height: 100px; width: 100px;"
+  />
+  <button>
+    x
+  </button>
+  <form>
+    <label
+      for="color"
+    >
+      Color: 
+    </label>
+    <input
+      id="color"
+      name="color"
+      placeholder="color"
+      type="text"
+      value=""
+    />
+    <label
+      for="height"
+    >
+      Height: 
+    </label>
+    <input
+      id="height"
+      name="height"
+      placeholder="height"
+      type="number"
+      value=""
+    />
+    <label
+      for="width"
+    >
+      Width: 
+    </label>
+    <input
+      id="width"
+      name="width"
+      placeholder="width"
+      type="number"
+      value=""
+    />
+    <button>
+      Add!
+    </button>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`Box > hasn't changed 1`] = `
+<DocumentFragment>
+  <div />
+  <button>
+    x
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Box > renders 1`] = `
+<DocumentFragment>
+  <div />
+  <button>
+    x
+  </button>
+</DocumentFragment>
+`;

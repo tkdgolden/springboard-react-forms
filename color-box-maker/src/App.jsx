@@ -5,7 +5,7 @@ import BoxList from './BoxList.jsx'
 
 const App = () => (
   <>
-    <h1>App</h1>
+    <h1>Making Boxes</h1>
     <BoxList />
   </>
 );
