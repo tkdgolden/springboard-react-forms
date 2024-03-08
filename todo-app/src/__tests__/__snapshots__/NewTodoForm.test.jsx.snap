@@ -1,0 +1,56 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NewTodoForm > hasn't changed 1`] = `
+<DocumentFragment>
+  <form>
+    <label
+      for="task"
+    >
+      Task: 
+    </label>
+    <input
+      id="task"
+      name="task"
+      type="text"
+      value=""
+    />
+    <button>
+      Enter
+    </button>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`TodoList > hasn't changed 1`] = `
+<DocumentFragment>
+  <h1>
+    To Do List
+  </h1>
+  <div
+    id="1"
+  >
+    <p>
+      Tada
+    </p>
+    <button>
+      X
+    </button>
+  </div>
+  <form>
+    <label
+      for="task"
+    >
+      Task: 
+    </label>
+    <input
+      id="task"
+      name="task"
+      type="text"
+      value=""
+    />
+    <button>
+      Enter
+    </button>
+  </form>
+</DocumentFragment>
+`;

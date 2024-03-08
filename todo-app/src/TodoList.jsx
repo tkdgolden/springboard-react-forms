@@ -18,7 +18,7 @@ const TodoList = () => {
 
     return (
         <>
-            <h3>Todo List</h3>
+            <h1>To Do List</h1>
             {todos.map(todo => <Todo key={todo.id} id={todo.id} task={todo.task} deleteTodo={deleteTodo} />)}
             <NewTodoForm addTodo={addTodo} />
         </>

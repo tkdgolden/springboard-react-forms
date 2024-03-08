@@ -6,10 +6,9 @@ const NewTodoForm = ({ addTodo }) => {
 
     const handleSubmit = evt => {
         evt.preventDefault();
-        const value = evt.target.task.value;
 
-        if (value) {
-            addTodo(value);
+        if (fData.task) {
+            addTodo(fData.task);
             setFormData({ task: INITIAL_STATE });
         }
     }
